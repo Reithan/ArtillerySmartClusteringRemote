@@ -727,7 +727,7 @@ end
 -- @param data ConfigurationChangedData Information about mod changes passed on by the game engine.
 --
 function remotes.on_configuration_changed(data)
-  local mod_changes = data.mod_changes["AdvancedArtilleryRemotesContinued"]
+  local mod_changes = data.mod_changes["ArtillerySmartClusteringRemote"]
 
   if mod_changes then
     -- Wipe the settings stored in global variable (from older mod versions). They are already easily accessible through

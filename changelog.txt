@@ -1,6 +1,11 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.0
 Date: 2024-09-13
+  Bugfixes:
+    - Fixed some minor localization problems
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 2024-09-13
   Changes:
     - Improved math and algorithm for clustering
     - Added tolerance for overlap to avoid missing enemies (set to 10% overlap currently)
