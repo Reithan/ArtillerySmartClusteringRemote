@@ -44,17 +44,16 @@ Should you come upon bugs, or have features and ideas on how to make the mod bet
 Known issues
 ------------
 
--   ~~Cluster targeting is suboptimal - less artillery shots could be used to destroy enemy within the same area. This is partially done in order to reduce complexity of comuputation, and partially in order not to make cluster targeting too overpowered - artillery cluster remotes save some time and provide convenience at the expense of increased resource usage.~~
--   **Not entirely fixed, but much better, now.** ~~Cluster targeting does not always manage to damage all enemy entities in an area. This is a consequence on how the damage radius is calculated for individual ammo categories. This is done by using same algorithm that shows the player damage/explosion area when holding the remote, which will often include visual effects such as smoke etc. However, this can be somewhat negated by using the mod settings to specify custom damage radius for ammo categories (see in-game mod settings for more details).~~
+-   If an ammo category is calculated as having 0 damage radius, this can cause a crash. Ensure all detected ammo types have a defined radius (TODO: provide minimum radius to avoid crash)
 -   Distinct artillery cluster remotes can only be created per ammo category - if a mod introduces additional artillery shells (which have different damage radius compared to vanilla artillery shells) that belong to the default artillery shell ammo category, then only one artillery cluster remote type is added by the mod. The reason for this is that target (flare) spawning (created by the remote) revolves around ammo categories, and it is not possible to tell the game to use only a particular ammo type unless it belongs in its own category.
 -   Only up to six artillery cluster remote types can exist in any given game. There is no real limitation behind this in the code, except that the six corresponding colours have been generated statically using six-tone colour palette generator algorithm. Should a need arise, this mod can easily be updated to support more types of artillery cluster remotes.
--   ~~Artillery cluster remotes are researched as part of vanilla game *Artillery* research instead of making them available as part of a particular artillery shell type technology research. This is done primarily to avoid messing too much with the 3rd-party mod technology trees.~~
 -   When using [Shortcuts for 1.1](https://mods.factorio.com/mod/Shortcuts-ick) mod, vanilla artillery cluster remote will not be hidden from the game. This is a consequence of temporary fix for crash in *Shortcuts for 1.1* mod, version 1.1.27.
 
 
 Roadmap
 -------
 
+-   Add ability to right-click remote and change default damage radius without having to go into mod settings directly
 -   Create smart unit-leading barrage option that predicts travel time of shells based on loaded cannons in range, and current motion of enemy. Possible add addition shells to saturate radius around predicted intersect location
 -   Investigate possibility of limiting target selection to visible entities, barring that, limit to at least chunk-charted entities, since we're not doing discovery artillery in this mod
 
