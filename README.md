@@ -54,6 +54,7 @@ Roadmap
 -------
 
 -   Add ability to right-click remote and change default damage radius without having to go into mod settings directly
+-   Add target acquisition 'modes': radius (default), leapfrop (chains to nearby targets), box (maybe)
 -   Create smart unit-leading barrage option that predicts travel time of shells based on loaded cannons in range, and current motion of enemy. Possible add addition shells to saturate radius around predicted intersect location
 -   Investigate possibility of limiting target selection to visible entities, barring that, limit to at least chunk-charted entities, since we're not doing discovery artillery in this mod
 
