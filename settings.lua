@@ -1,5 +1,6 @@
 -- Copyright (c) 2020 Dockmeister
 -- Copyright (c) 2023 Branko Majic
+-- Copyright (c) 2024 Bryan O'Malley
 -- Provided under MIT license. See LICENSE for details.
 
 
