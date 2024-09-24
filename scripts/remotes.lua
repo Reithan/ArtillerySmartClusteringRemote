@@ -557,7 +557,7 @@ function remotes.cluster_targeting(player, surface, requested_position, remote_p
 
   -- Create list of target positions.
   for _, entity in pairs(target_entities) do
-    table.insert(targets, entity.bounding_box) -- attempt using bounding_box, .prototype.collision_box may be useful? Check .orientation?
+    table.insert(targets, entity.bounding_box)
   end
 
   -- Optimise number of target positions for flares (reducing required ammo quantity).
