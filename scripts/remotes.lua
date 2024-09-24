@@ -342,7 +342,6 @@ end
 -- @param clusters {{center: {x,y}, radius, targets: {...}}, ...}
 --
 -- @return updated array of clusters
-
 function assign_clusters(targets, radius, clusters)
   if center_shift == nil then
     center_shift = false
